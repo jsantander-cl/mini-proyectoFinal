@@ -1,81 +1,75 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mini-proyectofinal</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero | Jordan Santander</title>
+    
+    <!-- Vinculación correcta -->
+    <link rel="stylesheet" href="./style.css">
 
-<!-- CARACTERISTICAS GENERALES -->
- <!-- COLOR BASE FONDO Y TEXTO ESTILO+COLOR -->
+</head>
+
+<!-- COLOR BASE FONDO Y TEXTO ESTILO+COLOR -->
  <!-- OVERFLOW ES PARA EL SCROLL LATERAL Y AJUSTAR LA PANTALLA -->
  <!-- MIN-H-SCREEN ESTABLECE LA ALTURA MININA DE UN ELEMENTO  EN ESTE CASO LA PANTALLA -->
+<body class="bg-[#0D1117]
+ text-[#FFFFFF]
+ font-sans 
+ overflow-x-hidden 
+ min-h-screen">
 
-<body
-  class=" 
-  bg-[#0d1117]
-  text-[#ffffff]
-  font-sans
-  overflow-x-hidden
-  min-h-screen
-  ">
-
-
-  <!-- LOGO - NAV - BOTON -->
-<header class="
-  max-w-7x1
-  flex
-  justify-between
-  item-center
-  p-8">
-
-
-  <div class="font-bold 
+    <!-- NAVBAR -->
+    <header class="max-w-7xl 
+        mx-auto 
+        flex 
+        justify-between 
+        items-center 
+        p-8">
+        
+        <div class="font-bold 
         tracking-tighter 
         text-xl">FUNVAL</div>
-
-
-  <!-- el simbolo # en "href=" Evita la recarga: Al hacer clic, el navegador no busca una página nueva (como contacto.html), 
- sino que se queda en la actua -->
-  <nav class="
-        hidden 
+        
+        <nav class="hidden 
         md:flex 
         gap-10 
         text-[11px] 
         font-bold 
         tracking-[0.2em] 
         text-[#8892B0]">
-    <a href="#" class="hover:text-[ffffff] transition">SOBRE MI</a>
-    <a href="#" class="hover:text-[ffffff] transition">HABILIDADES</a>
-    <a href="#" class="hover:text-[ffffff] transition">PROYECTOS</a>
-  </nav>
 
-  <button class="
-   border-[#E3FF6A] 
-    rounded-full text-[11px] 
-   font-bold 
-    tracking-widest 
-    flex items-center 
-    gap-3 
-   hover:bg-[#E3FF6A]
-   hover:text-black 
-    hover: text-[#8892B0] transition">CONTACTO
-    <span class="bg-[#E3FF6A] 
-       text-black
-        rounded-full 
-        w-4 h-4 
-        flex 
-        items-center 
-        justify-center 
-        text-[10px]">↗
-      </span>
-    </button>
-</header>
+            <a href="#" class="hover:text-white transition">SOBRE MI</a>
+            <a href="#" class="hover:text-white transition">HABILIDADES</a>
+            <a href="#" class="hover:text-white transition">PROYECTOS</a>
+        </nav>
 
+        <!-- BOTON DE CONTACTO -->
+        <button class="border 
+        border-[#E3FF6A] 
+        text-[#E3FF6A] px-6 py-2 
+        rounded-full text-[11px] 
+        font-bold 
+        tracking-widest 
+        flex items-center 
+        gap-3 
+        hover:bg-[#E3FF6A]
+        hover:text-black 
+        transition">CONTACTO
+        <span class="bg-[#E3FF6A] 
+            text-black
+            rounded-full 
+            w-4 h-4 
+            flex 
+            items-center 
+            justify-center 
+            text-[10px]">↗</span>
+        </button>
 
-<main class="relative 
+    </header>
+
+    
+        <main class="relative 
         max-w-7xl 
         mx-auto 
         flex 
@@ -83,45 +77,23 @@
         items-center 
         pt-16 px-4 
         hero-bg">
-
-  <!-- TÍTULOS: Ajustados en tamaño e interlineado -->
-        <div class="
-           text-center 
-           mb-[-60px] 
-           z-10">
-
-         <h1 class="
-         text-5xl 
-         md:text-7xl 
-         font-bold 
-         mt-1 
-         tracking-tight 
-         leading-[1.1] 
-         max-w-4xl 
-         mx-auto"
-         >Front End Developer
-         </h1>
-
-
-
-    <!-- Contenedor "en línea" (Inline): Mientras que un <div> ocupa todo el ancho disponible y crea una nueva línea, 
-      un <span> solo ocupa el espacio necesario y fluye junto al resto del contenido. -->
-          <h2 class="
-              text-2xl 
-              md:text-4xl 
-              font-light 
-              tracking-tight 
-             text-white/90">Soy 
-
-              <span class="
-                 text-[#E3FF6A] 
-                 font-bold">Jordan Santander Phillips
-              </span>
-          </h2>
+        
+        <!-- TÍTULOS: Ajustados en tamaño e interlineado -->
+        <div class="text-center mb-[-60px] z-10">
+             
+          <h2 class="text-2xl md:text-4xl font-light tracking-tight text-white/90">
+                Soy <span class="text-[#E3FF6A] font-bold">Jordan Santander Phillips</span>
+            </h2>
+          
+          <h1 class="text-5xl md:text-7xl font-bold mt-1 tracking-tight leading-[1.1] max-w-4xl mx-auto">
+                Front End Developer
+            </h1>
+            
+            
            
         </div>
 
-  <!-- CONTENEDOR DE IMAGEN Y TARJETAS: Más ancho para separar las tarjetas -->
+        <!-- CONTENEDOR DE IMAGEN Y TARJETAS: Más ancho para separar las tarjetas -->
         <div class="relative w-full max-w-6xl flex justify-center items-end min-h-[550px]">
             
             <!-- RESPLANDOR DETRÁS DE LA FOTO (Efecto de la referencia) -->
@@ -170,15 +142,4 @@
     </main>
 
 </body>
-</html>
-
-
-
-
-
-  
-
-
-
-  </body>
 </html>
