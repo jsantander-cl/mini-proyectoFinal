@@ -22,14 +22,31 @@
   min-h-screen
   ">
 
-  <div class="
+
+<!-- LOGO - NAV - BOTON -->
+  <header class="
   max-w-7x1
-  ">FUNVAL</div>
+  flex
+  justify-between
+  item-center
+  p-8">
+
+
+  <div class="font-bold 
+        tracking-tighter 
+        text-xl">FUNVAL</div>
 
 
 <!-- el simbolo # en "href=" Evita la recarga: Al hacer clic, el navegador no busca una página nueva (como contacto.html), 
  sino que se queda en la actua -->
-  <nav>
+  <nav class=""
+        hidden 
+        md:flex 
+        gap-10 
+        text-[11px] 
+        font-bold 
+        tracking-[0.2em] 
+        text-[#8892B0]">
     <a href="#" class="hover:text-[ffffff] transition">SOBRE MI</a>
     <a href="#" class="hover:text-[ffffff] transition">HABILIDADES</a>
     <a href="#" class="hover:text-[ffffff] transition">PROYECTOS</a>
