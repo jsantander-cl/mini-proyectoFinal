@@ -22,323 +22,78 @@ overflow-x-hidden
 ">
 
 
-  <!-- NAV + LOGO -->
-  <header class="max-w-7xl 
-            mx-auto 
-            flex 
-            justify-between 
-            items-center 
-            p-8">
+<!-- NAV + LOGO -->
+<header class="max-w-7xl mx-auto flex justify-between items-center p-6 md:p-10">
+  <div class="font-bold tracking-tighter text-xl">FUNVAL</div>
 
-    <div class="font-bold 
-            tracking-tighter 
-            text-xl">FUNVAL</div>
+  <!-- Aparece automáticamente en Desktop (md: 768px) -->
+  <nav class="hidden md:flex gap-10 text-[12px] font-bold tracking-[0.2em] text-[#8892B0]">
+    <a href="#" class="hover:text-white transition">SOBRE MI</a>
+    <a href="#" class="hover:text-white transition">HABILIDADES</a>
+    <a href="#" class="hover:text-white transition">PROYECTOS</a>
+  </nav>
 
-    <nav class="hidden 
-            md:flex 
-            gap-10 
-            text-[11px] 
-            font-bold 
-            tracking-[0.2em] 
-            text-[#8892B0]">
+  <button class="border border-[#E3FF6A] text-[#E3FF6A] px-4 py-2 md:px-6 md:py-2 rounded-full text-[10px] md:text-[11px] font-bold tracking-widest flex items-center gap-2 hover:bg-[#E3FF6A] hover:text-black transition">
+    CONTACTO
+    <span class="bg-[#E3FF6A] text-black rounded-full w-4 h-4 flex items-center justify-center text-[10px]">↗</span>
+  </button>
+</header>
 
-      <a href="#" class="hover:text-white transition">SOBRE MI</a>
-      <a href="#" class="hover:text-white transition">HABILIDADES</a>
-      <a href="#" class="hover:text-white transition">PROYECTOS</a>
-    </nav>
+<main class="relative max-w-7xl mx-auto flex flex-col items-center pt-10 md:pt-16 px-4">
 
-    <!-- BOTON DE CONTACTO -->
-    <button class="border 
-            border-[#E3FF6A] 
-            text-[#E3FF6A] px-6 py-2 
-            rounded-full text-[11px] 
-            font-bold 
-            tracking-widest 
-            flex items-center 
-            gap-3 
-            hover:bg-[#E3FF6A]
-            hover:text-black 
-            transition">CONTACTO
-      <span class="bg-[#E3FF6A] 
-                text-black
-                rounded-full 
-                w-4 h-4 
-                flex 
-                items-center 
-                justify-center 
-                text-[10px]">↗</span>
-    </button>
-
-  </header>
-
-
-  <main class="
-  relative 
-  max-w-7xl 
-  mx-auto 
-  flex 
-  flex-col 
-  items-center 
-  pt-16 px-4 
-  hero-bg">
-
-
-  
-<!-- TITULO ESTILO REFERENCIA AJUSTADO -->
-<div class="text-center z-10 flex flex-col items-center">
-    <!-- Nombre -->
-    <h2 class="text-2xl md:text-3xl font-light tracking-tight text-white/90">
-        Soy <span class="text-[#E3FF6A] font-bold">Jordan Santander Phillips</span>
-    </h2>
-    
-    <!-- Contenedor del Título Principal: gap-2 para juntar las palabras -->
-    <h1 class="mt-6 flex flex-row items-center justify-center gap-2 tracking-tighter">
-
-        <!-- Cápsula: rounded-2xl para esquinas menos circulares, tracking-tighter para letras juntas -->
-        <span class="inline-block border border-white/20 bg-transparent px-6 py-2 md:px-8 md:py-3 rounded-2xl text-4xl md:text-6xl font-bold backdrop-blur-sm shadow-xl whitespace-nowrap tracking-tighter">
-            Front End
-        </span>
-        
-        <!-- Developer: tracking-tighter para que las letras estén pegadas -->
-        <span class="text-4xl md:text-6xl font-bold whitespace-nowrap tracking-tighter">
-            Developer
-        </span>
-    </h1>
-</div>
-
-
-
-
-    <!-- CONTENEDOR DE IMAGEN Y TARJETAS: Más ancho para separar las tarjetas -->
-    <div class="
-  relative 
-  w-full 
-  max-w-6xl 
-  flex 
-  justify-center 
-  items-end 
-  min-h-[550px]">
-
-      <!-- RESPLANDOR DETRÁS DE LA FOTO -->
-      <div class="
-    absolute 
-    bottom-20 
-    w-[500px] h-[500px] 
-   bg-orange-400/5 
-    rounded-full 
-    blur-[120px] 
-    z-0">
-      </div>
-
-      <!-- TARJETA IZQUIERDA: Más abajo y hacia el extremo -->
-      <div class="
-    absolute 
-    left-4 
-    md:left-10 
-    bottom-32 
-    z-30 
-    hidden 
-    lg:block 
-    w-64 p-5 
-    rounded-2xl 
-    bg-[#1E293B]/60 
-    backdrop-blur-md 
-    border 
-    border-white/5 
-    -rotate-3 
-    shadow-2xl">
-
-        <p class="
-      text-[9px] 
-      font-bold 
-      text-[#8892B0] 
-      mb-2 
-      tracking-[0.2em]">RESEÑA DE CLIENTE DE
-        </p>
-
-
-        <h4 class="
-    text-md 
-    font-bold 
-    mb-2">Australia
-
-          <span class="
-     bg-blue-600/20 
-     text-blue-400 
-     px-1 
-     rounded 
-     text-[10px]">AU
+  <!-- Títulos adaptables -->
+  <div class="text-center z-10 flex flex-col items-center w-full">
+      <h2 class="text-xl md:text-3xl font-light tracking-tight text-white/90">
+          Soy <span class="text-[#E3FF6A] font-bold">Jordan Santander Phillips</span>
+      </h2>
+      <h1 class="mt-4 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-2 tracking-tighter">
+          <span class="inline-block border border-white/20 bg-transparent px-5 py-2 md:px-8 md:py-3 rounded-2xl text-3xl md:text-6xl font-bold backdrop-blur-sm shadow-xl tracking-tighter">
+              Front End
           </span>
-        </h4>
+          <span class="text-3xl md:text-6xl font-bold tracking-tighter">
+              Developer
+          </span>
+      </h1>
+  </div>
 
-        <p class="
-     text-[11px] 
-   text-[#8892B0] 
-     leading-relaxed 
-     italic">
-          "Excelente desarrollador web. Comunicación impecable. Muy recomendable."
-        </p>
-      </div>
+  <div class="relative w-full max-w-6xl flex justify-center items-end min-h-[450px] md:min-h-[550px] mt-10">
+    
+    <!-- TARJETA IZQUIERDA (Reseña) -->
+    <!-- 'hidden' en móvil, 'md:block' para que aparezca en desktop -->
+    <div class="hidden md:block absolute left-0 lg:left-10 bottom-32 z-30 w-56 lg:w-64 p-5 rounded-2xl bg-[#1E293B]/60 backdrop-blur-md border border-white/5 -rotate-3 shadow-2xl">
+        <p class="text-[9px] font-bold text-[#8892B0] mb-2 tracking-[0.2em]">RESEÑA DE CLIENTE</p>
+        <h4 class="text-md font-bold mb-2">Australia <span class="bg-blue-600/20 text-blue-400 px-1 rounded text-[10px]">AU</span></h4>
+        <p class="text-[11px] text-[#8892B0] leading-relaxed italic">"Excelente desarrollador web. Muy recomendable."</p>
+    </div>
 
+    <!-- IMAGEN CENTRAL -->
+    <div class="relative z-20 w-full max-w-[280px] md:max-w-md flex justify-center">
+      <img src="/image_47eb3cbb.png" alt="IMAGEN DE JORDAN" class="w-full h-auto object-contain">
+      <button class="absolute -bottom-4 md:bottom-8 bg-[#E3FF6A] text-black px-8 py-3 rounded-full text-[10px] font-black tracking-widest uppercase shadow-lg hover:scale-105 transition-transform">
+        PROYECTOS
+      </button>
+    </div>
 
-      <!-- IMAGEN CENTRAL -->
-      <div class="
-    relative 
-    z-20 
-    w-full 
-    max-w-md 
-    flex j
-    ustify-center">
-
-
-        <!-- Imagen con sombra suave -->
-        <img src="/image_47eb3cbb.png" alt="IMAGEN DE JORDAN" class="
-        w-[85%] 
-        h-auto 
-        object-contain 
-        drop-shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-
-        <!-- BOTÓN PROYECTOS: Más pequeño y estilizado -->
-        <button class="absolute 
-        bottom-8 
-        bg-[#E3FF6A] 
-        text-black 
-        px-8 py-3 
-        rounded-full 
-        text-[10px] 
-        font-black 
-        tracking-widest 
-        uppercase 
-        shadow-lg 
-        hover:scale-105 
-        transition-transform 
-        duration-300">
-          PROYECTOS
-        </button>
-      </div>
-
-      <!-- TARJETA DERECHA: Más abajo y con barras de progreso finas -->
-      <div class="
-      absolute 
-      right-4 
-      md:right-10 
-      bottom-24 
-      z-30 hidden 
-      lg:block 
-      w-64 p-6 
-      rounded-2xl 
-      bg-[#1E293B]/60 
-      backdrop-blur-md 
-      border 
-      border-white/5 
-      rotate-3 
-      shadow-2xl">
-
-        <p class="
-      text-[9px] 
-      font-bold 
-      text-[#8892B0] 
-      mb-5 tracking-[0.2em] 
-      uppercase">
-          Mis Conocimientos
-        </p>
-
-        <div class="
-      space-y-4">
-
+    <!-- TARJETA DERECHA (Conocimientos) -->
+    <!-- 'hidden' en móvil, 'md:block' para que aparezca en desktop -->
+    <div class="hidden md:block absolute right-0 lg:right-10 bottom-24 z-30 w-56 lg:w-64 p-6 rounded-2xl bg-[#1E293B]/60 backdrop-blur-md border border-white/5 rotate-3 shadow-2xl">
+        <p class="text-[9px] font-bold text-[#8892B0] mb-5 tracking-[0.2em] uppercase">Mis Conocimientos</p>
+        <div class="space-y-4">
+          <!-- Barra de ejemplo: Frontend -->
           <div>
-            <div class="
-          flex 
-          justify-between 
-          text-[9px] 
-          font-bold 
-          mb-1 
-          uppercase">
-              <span>Backend</span>
-              <span class="
-          text-[#8892B0]">85%
-              </span>
-            </div>
-
-
-            <div class="
-          h-[2px] 
-          w-full 
-          bg-white/10 
-          rounded-full">
-
-              <div class="
-            h-full 
-            bg-[#E3FF6A] 
-            rounded-full" style="width: 85%">
-              </div>
-
-            </div>
-
-          </div>
-          <div>
-            <div class="
-          flex 
-          justify-between 
-          text-[9px] 
-          font-bold 
-          mb-1 
-          uppercase">
-              <span>CMS</span>
-
-              <span class="
-          text-[#8892B0]">70%</span>
-            </div>
-
-            <div class="
-          h-[2px] w-full 
-          bg-white/10 
-          rounded-full">
-              <div class="
-            h-full 
-            bg-[#E3FF6A] 
-            rounded-full" style="
-            width: 70%">
-
-              </div>
-            </div>
-          </div>
-          <div>
-
-            <div class="
-          flex 
-          justify-between 
-          text-[9px] 
-          font-bold 
-          mb-1 
-          uppercase">
+            <div class="flex justify-between text-[9px] font-bold mb-1 uppercase">
               <span>Frontend</span>
-
-              <span class="
-          text-[#8892B0]">95%
-              </span>
+              <span class="text-[#8892B0]">95%</span>
             </div>
-
-            <div class="
-          h-[2px] 
-          w-full 
-          bg-white/10 
-          rounded-full">
-
-              <div class="
-            h-full 
-            bg-[#E3FF6A] 
-            rounded-full" style="
-            width: 95%">
-
-              </div>
+            <div class="h-[2px] w-full bg-white/10 rounded-full">
+              <div class="h-full bg-[#E3FF6A] rounded-full" style="width: 95%"></div>
             </div>
           </div>
         </div>
-      </div>
-
     </div>
-  </main>
+
+  </div>
+</main>
 
 </body>
 
