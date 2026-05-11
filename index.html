@@ -1,193 +1,774 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero | Jordan Santander</title>
-    
-    <!-- Vinculación correcta -->
-    <link rel="stylesheet" href="./style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Jordan Santander</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
- <!-- COLOR BASE FONDO Y TEXTO ESTILO+COLOR -->
- <!-- OVERFLOW ES PARA EL SCROLL LATERAL Y AJUSTAR LA PANTALLA -->
- <!-- MIN-H-SCREEN ESTABLECE LA ALTURA MININA DE UN ELEMENTO  EN ESTE CASO LA PANTALLA -->
 <body class="
-bg-gradient-main 
-min-h-screen 
-text-white 
-font-sans 
-overflow-x-hidden
-">
+  bg-[#0B0F1A] 
+  min-h-screen 
+  text-white 
+  font-sans 
+  overflow-x-hidden">
 
+  <!-- 1/5: HEADER -->
+  <header class="
+    w-full
+    mx-auto 
+    flex 
+    justify-between 
+    items-center 
+    p-6 
+    md:p-10">
 
-<!-- NAV + LOGO -->
-<header class="max-w-7xl mx-auto flex justify-between items-center p-6 md:p-10">
-  <div class="font-bold tracking-tighter text-xl">FUNVAL</div>
+    <div class="
+      font-bold 
+      text-5xl 
+      tracking-tighter">
+      FUNVAL
+    </div>
+    
+    <nav class="
+      hidden 
+      md:flex 
+      gap-30 
+      text-[20px] 
+      font-bold 
+      tracking-[0.2em] 
+      text-[#8892B0]">
+      <a href="#sobre-mi" class="hover:text-white transition">SOBRE MI</a>
+      <a href="#habilidades" class="hover:text-white transition">HABILIDADES</a>
+      <a href="#empresas" class="hover:text-white transition">PROYECTOS</a>
+    </nav>
 
-  <!-- Aparece automáticamente en Desktop (md: 768px) -->
-  <nav class="hidden md:flex gap-10 text-[12px] font-bold tracking-[0.2em] text-[#8892B0]">
-    <a href="#" class="hover:text-white transition">SOBRE MI</a>
-    <a href="#" class="hover:text-white transition">HABILIDADES</a>
-    <a href="#" class="hover:text-white transition">PROYECTOS</a>
-  </nav>
+    <button class="
+      border 
+      border-[#E3FF6A] 
+      text-[#E3FF6A] 
+      px-5 
+      py-2 
+      rounded-full 
+      text-[20px] 
+      font-bold 
+      tracking-widest 
+      hover:bg-[#E3FF6A] 
+      hover:text-black 
+      transition-all">
+      CONTACTO
+    </button>
+  </header>
 
-  <button class="border border-[#E3FF6A] text-[#E3FF6A] px-4 py-2 md:px-6 md:py-2 rounded-full text-[10px] md:text-[11px] font-bold tracking-widest flex items-center gap-2 hover:bg-[#E3FF6A] hover:text-black transition">
-    CONTACTO
-    <span class="bg-[#E3FF6A] text-black rounded-full w-4 h-4 flex items-center justify-center text-[10px]">↗</span>
-  </button>
-</header>
+  <main id="inicio" class="
+    relative 
+    max-w-7xl 
+    mx-auto 
+    flex 
+    flex-col 
+    items-center 
+    pt-10 
+    md:pt-16 
+    px-4">
 
-<main class="relative max-w-7xl mx-auto flex flex-col items-center pt-10 md:pt-16 px-4">
+    <div class="
+      text-center 
+      z-10 
+      flex 
+      flex-col 
+      items-center 
+      w-full">
+      
+      <h2 class="
+        text-xl 
+        md:text-4xl 
+        font-light 
+        tracking-tight 
+        text-white/90">
+        Soy <span class="text-[#E3FF6A] font-bold">Jordan Santander Phillips</span>
+      </h2>
+      
+      <h1 class="
+        mt-4 
+        md:mt-6 
+        flex 
+        flex-col 
+        md:flex-row 
+        items-center 
+        justify-center 
+        gap-2">
+        
+        <span class="
+          border 
+          border-white/20 
+          bg-transparent 
+          px-5 
+          py-2 
+          md:px-8 
+          md:py-3 
+          rounded-2xl 
+          text-3xl 
+          md:text-6xl 
+          font-bold 
+          backdrop-blur-sm 
+          shadow-xl 
+          tracking-tighter">
+          Front End
+        </span>
+        
+        <span class="
+          text-3xl 
+          md:text-6xl 
+          font-bold 
+          tracking-tighter">
+          Developer
+        </span>
+      </h1>
+    </div>
 
-       <!-- RESPLANDOR DETRÁS DE LA FOTO -->
+    <div class="
+      relative 
+      w-full 
+      max-w-6xl 
+      flex 
+      justify-center 
+      items-end 
+      min-h-[400px] 
+      md:min-h-[550px] 
+      mt-10">
+      
       <div class="
-    absolute 
-    bottom-20 
-    w-[250px] h-[400px] 
-   bg-yellow-400/70
-    rounded-full
-    blur-[120px] 
-    z-0">
+        absolute 
+        bottom-20 
+        w-48 
+        h-64 
+        md:w-64 
+        md:h-80 
+        bg-yellow-400/40 
+        rounded-full 
+        blur-[100px] 
+        z-0">
+      </div>
+      
+      <div class="
+        relative 
+        z-20 
+        w-full 
+        max-w-[280px] 
+        md:max-w-md 
+        flex 
+        flex-col 
+        items-center">
+        
+        <img src="./IMG/image_47eb3cbb.png" alt="Jordan" 
+        class="
+          w-full 
+          h-auto 
+          object-contain">
+
+        <button class="
+          -mt-8 
+          z-30 
+          bg-[#E3FF6A] 
+          text-black 
+          px-10 
+          py-3 
+          rounded-full 
+          text-[15px] 
+          font-black 
+          uppercase 
+          shadow-2xl 
+          hover:scale-105 
+          transition-transform">
+          PROYECTOS
+        </button>
       </div>
 
-  <!-- Títulos adaptables -->
-  <div class="text-center z-10 flex flex-col items-center w-full">
-      <h2 class="text-xl md:text-3xl font-light tracking-tight text-white/90">
-          Soy <span class="text-[#E3FF6A] font-bold">Jordan Santander Phillips</span>
-      </h2>
-      <h1 class="mt-4 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-2 tracking-tighter">
-          <span class="inline-block border border-white/20 bg-transparent px-5 py-2 md:px-8 md:py-3 rounded-2xl text-3xl md:text-6xl font-bold backdrop-blur-sm shadow-xl tracking-tighter">
-              Front End
-          </span>
-          <span class="text-3xl md:text-6xl font-bold tracking-tighter">
-              Developer
-          </span>
-      </h1>
-  </div>
-
-  <div class="relative w-full max-w-6xl flex justify-center items-end min-h-[450px] md:min-h-[550px] mt-10">
-    
-    <!-- TARJETA IZQUIERDA (Reseña) -->
-    <!-- 'hidden' en móvil, 'md:block' para que aparezca en desktop -->
-    <div class="hidden md:block absolute left-0 lg:left-10 bottom-32 z-30 w-56 lg:w-64 p-5 rounded-2xl bg-[#1E293B]/60 backdrop-blur-md border border-white/5 -rotate-3 shadow-2xl">
-        <p class="text-[9px] font-bold text-[#8892B0] mb-2 tracking-[0.2em]">RESEÑA DE CLIENTE</p>
-        <h4 class="text-md font-bold mb-2">Australia <span class="bg-blue-600/20 text-blue-400 px-1 rounded text-[10px]">AU</span></h4>
-        <p class="text-[11px] text-[#8892B0] leading-relaxed italic">"Excelente desarrollador web. Muy recomendable."</p>
-    </div>
-
-    <!-- IMAGEN CENTRAL -->
-    <div class="relative z-20 w-full max-w-[280px] md:max-w-md flex justify-center">
-      <img src="/image_47eb3cbb.png" alt="IMAGEN DE JORDAN" class="w-full h-auto object-contain">
-      <button class="absolute -bottom-4 md:bottom-8 bg-[#E3FF6A] text-black px-8 py-3 rounded-full text-[10px] font-black tracking-widest uppercase shadow-lg hover:scale-105 transition-transform">
-        PROYECTOS
-      </button>
-    </div>
-
-    <!-- TARJETA DERECHA (Conocimientos) -->
-    <!-- 'hidden' en móvil, 'md:block' para que aparezca en desktop -->
-    <div class="hidden md:block absolute right-0 lg:right-10 bottom-24 z-30 w-56 lg:w-64 p-6 rounded-2xl bg-[#1E293B]/60 backdrop-blur-md border border-white/5 rotate-3 shadow-2xl">
-        <p class="text-[9px] font-bold text-[#8892B0] mb-5 tracking-[0.2em] uppercase">Mis Conocimientos</p>
-        <div class="space-y-4">
+      <div class="
+        hidden 
+        md:block 
+        absolute 
+        left-0 
+        lg:left-10 
+        bottom-32 
+        z-30 
+        w-72 
+        lg:w-80 
+        p-8 
+        rounded-3xl 
+        bg-[#1E293B]/60 
+        backdrop-blur-md 
+        border 
+        border-white/5 
+        -rotate-3 
+        shadow-2xl">
+        
+        <p class="
+          text-[11px] 
+          font-bold 
+          text-[#8892B0] 
+          mb-3 
+          tracking-[0.2em] 
+          uppercase">
+          Reseña de cliente
         </p>
+        
+        <p class="
+          text-[14px] 
+          leading-relaxed 
+          italic 
+          text-white/90">
+          "Excelente desarrollador web. Muy recomendable."
+        </p>
+      </div>
 
- <!-- Barra de ejemplo: Frontend -->
-        <div class="
-      space-y-4">
-
+      <div class="
+        hidden 
+        md:block 
+        absolute 
+        right-0 
+        lg:right-10 
+        bottom-24 
+        z-30 
+        w-72 
+        lg:w-80 
+        p-8 
+        rounded-3xl 
+        bg-[#1E293B]/60 
+        backdrop-blur-md 
+        border 
+        border-white/5 
+        rotate-3 
+        shadow-2xl">
+        
+        <p class="
+          text-[11px] 
+          font-bold 
+          text-[#8892B0] 
+          mb-6 
+          uppercase 
+          tracking-[0.2em]">
+          Mis Conocimientos
+        </p>
+        
+        <div class="space-y-6">
           <div>
             <div class="
-          flex 
-          justify-between 
-          text-[9px] 
-          font-bold 
-          mb-1 
-          uppercase">
-              <span>Backend</span>
-              <span class="
-          text-[#8892B0]">85%
-              </span>
-            </div>
-
-
-            <div class="
-          h-[2px] 
-          w-full 
-          bg-white/10 
-          rounded-full">
-
-              <div class="
-            h-full 
-            bg-[#E3FF6A] 
-            rounded-full" style="width: 85%">
-              </div>
-
-            </div>
-
-          </div>
-          <div>
-            <div class="
-          flex 
-          justify-between 
-          text-[9px] 
-          font-bold 
-          mb-1 
-          uppercase">
-              <span>CMS</span>
-
-              <span class="
-          text-[#8892B0]">70%</span>
-            </div>
-
-            <div class="
-          h-[2px] w-full 
-          bg-white/10 
-          rounded-full">
-              <div class="
-            h-full 
-            bg-[#E3FF6A] 
-            rounded-full" style="
-            width: 70%">
-
-              </div>
-            </div>
-          </div>
-          <div>
-
-            <div class="
-          flex 
-          justify-between 
-          text-[9px] 
-          font-bold 
-          mb-1 
-          uppercase">
+              flex 
+              justify-between 
+              text-[12px] 
+              font-bold 
+              mb-2 
+              uppercase">
               <span>Frontend</span>
-
-              <span class="
-          text-[#8892B0]">95%
-              </span>
+              <span class="text-[#8892B0]">95%</span>
+            </div>
+            <div class="
+              h-[3px] 
+              w-full 
+              bg-white/10 
+              rounded-full 
+              overflow-hidden">
+              <div class="h-full bg-[#E3FF6A]" style="width: 95%"></div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="
+              flex 
+              justify-between 
+              text-[12px] 
+              font-bold 
+              mb-2 
+              uppercase">
+              <span>Backend</span>
+              <span class="text-[#8892B0]">85%</span>
             </div>
 
             <div class="
-          h-[2px] 
-          w-full 
-          bg-white/10 
-          rounded-full">
-
-              <div class="
-            h-full 
-            bg-[#E3FF6A] 
-            rounded-full" style="
-            width: 95%">
+              h-[3px] 
+              w-full 
+              bg-white/10 
+              rounded-full 
+              overflow-hidden">
+              <div class="h-full bg-[#E3FF6A]" style="width: 85%"></div>
             </div>
-          </div>
+
+  </main>
+
+
+  <!-- 2/5: SOBRE MI -->
+  <section id="sobre-mi" class="
+    w-full 
+    min-h-screen 
+    bg-[#0B0F1A] 
+    flex 
+    items-center 
+    justify-center 
+    px-6 
+    py-20 
+    overflow-hidden">
+
+    <div class="
+      max-w-7xl 
+      mx-auto 
+      grid 
+      grid-cols-1 
+      lg:grid-cols-[1fr_2fr_1fr] 
+      gap-10 
+      items-center 
+      w-full">
+
+      <aside class="
+        hidden 
+        lg:flex 
+        flex-col 
+        gap-20 
+        items-center">
+        
+        <div class="
+          w-42 
+          h-54 
+          bg-gray-800 
+          rounded-2xl 
+          -rotate-12 
+          overflow-hidden 
+          shadow-2xl">
+          <img src="./IMG/20150222_222553_LLS.JPG" alt="JORDAN CON CAMARA" class="w-full h-full object-cover">
         </div>
+
+        <div class="
+          w-46 
+          h-58 
+          bg-gray-800 
+          rounded-2xl 
+          rotate-6 
+          overflow-hidden 
+          shadow-2xl">
+          <img src="./IMG/DSCN8677.JPG" alt="Jordan con un letreroS" class="w-full h-full object-cover">
+        </div>
+      </aside>
+
+      <article class="
+        flex 
+        flex-col 
+        items-center 
+        text-center 
+        z-10">
+        
+        <h2 class="
+          text-[#E3FF6A] 
+          text-4xl 
+          md:text-6xl 
+          font-black 
+          uppercase 
+          tracking-tighter 
+          mb-8">
+          SOBRE MI
+        </h2>
+
+        <div class="
+          space-y-6 
+          text-gray-400 
+          text-sm 
+          md:text-[20px]
+          leading-relaxed">
+          <p>
+            Soy desarrollador Front-End especializado en ReactJS. 
+            Además, tengo conocimientos de desarrollo front-end en WordPress 
+            con Elementor y WooCommerce.
+          </p>
+          <p>
+            La programación es mi pasión, por eso trabajo mientras estudio.
+          </p>
+          <p>
+            En mi tiempo libre, me gusta jugar videojuegos y leer Mangas, la Fotografia. 
+            ¡lo cual me resulta muy entretenido y relajante!
+          </p>
+        </div>
+
+        <button class="
+          mt-10 
+          bg-[#E3FF6A] 
+          text-black 
+          px-10 
+          py-3 
+          rounded-full 
+          text-[15px] 
+          font-black 
+          uppercase 
+          tracking-widest 
+          hover:scale-105 
+          transition-transform">
+          MIS PROYECTOS
+        </button>
+      </article>
+
+      <aside class="
+        hidden 
+        lg:flex 
+        flex-col 
+        items-center">
+        <div class="
+          w-54 
+          h-66 
+          bg-gray-800 
+          rounded-2xl 
+          -rotate-6 
+          overflow-hidden 
+          shadow-2xl">
+          <img src="https://scontent.fscl9-2.fna.fbcdn.net/v/t1.6435-9/102938332_10222137809096999_4950925019002731897_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ca4fef&_nc_eui2=AeFS5YIT28ass_ZcKok9wuSi7W-PilEYip_tb4-KURiKnzEx9Vi0jSxkkPcktObdvbs&_nc_ohc=jMXkwVWu85YQ7kNvwFHztAT&_nc_oc=AdoqNQB-j-IdNqlyOjT1fbSNV0Snbm564zKjHNK2kY1kVyXi3f9pelQu3bXdmvYqPMkLoh5qcQrGbhgf48Jr2edt&_nc_zt=23&_nc_ht=scontent.fscl9-2.fna&_nc_gid=-oaO4_XL9h0Fo85r0tyClg&_nc_ss=7b2a8&oh=00_Af7ShT06vbxW3FpAWYYT_91ys15tZp6ojZMaVfP4hDULAg&oe=6A25E1C7" 
+          class="w-full h-full object-cover">
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 3/5: HABILIDADES -->
+  <section id="habilidades" 
+    class="
+      w-full 
+      bg-[#0B0F1A] 
+      py-20 
+      px-6">
+
+    <div class="
+      max-w-6xl 
+      mx-auto">
+
+      <h2 class="
+        text-[#E3FF6A] 
+        text-3xl 
+        md:text-5xl 
+        font-black 
+        text-center 
+        uppercase 
+        mb-12 
+        tracking-tighter">
+        MIS HABILIDADES
+      </h2>
+
+      <!-- CONTENEDOR PRINCIPAL: Grid de 1 col en móvil, 12 cols en Desktop -->
+      <div class="
+        grid 
+        grid-cols-1 
+        lg:grid-cols-12 
+        gap-6">
+        
+        <!-- SUB-GRID IZQUIERDO: Contiene los 8 logos (8 de las 12 columnas) -->
+        <div class="
+          lg:col-span-8 
+          grid 
+          grid-cols-2 
+          md:grid-cols-4 
+          gap-4">
+          
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 12.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 2.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 3.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 4.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 5.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 14.png" class="w-20 h-20"></div>
+          <div class="bg-[#111827] aspect-square rounded-2xl flex items-center justify-center border border-white/5"><img src="./IMG/image copy 7.png" class="w-20 h-20"></div>
+        </div>
+
+        <!-- TARJETA DERECHA: Experiencia (4 de las 12 columnas) -->
+        <div class="
+          lg:col-span-4 
+          bg-[#111827] 
+          rounded-2xl 
+          p-10 
+          flex 
+          flex-col
+          items-center 
+          justify-center 
+          text-center 
+          border 
+          border-white/5 
+          h-full">
+
+          <span class="
+            text-7xl 
+            font-black 
+            text-white 
+            mb-2">
+            1
+          </span>
+
+          <p class="
+            text-gray-400 
+            text-sm 
+            font-bold 
+            leading-tight 
+            mb-8">
+            MES<br> 
+            de Experiencia
+          </p>
+
+          <button class="
+            bg-[#E3FF6A] 
+            text-black 
+            px-8 
+            py-4 
+            rounded-full 
+            text-[13px] 
+            font-black 
+            uppercase 
+            tracking-widest 
+            hover:scale-105 
+            transition-transform">
+            DESCARGAR MI CV
+          </button>
+        </div>
+      </div>
+
+      <div class="
+        mt-12 
+        p-8 
+        bg-[#111827]/50 
+        rounded-3xl 
+        border 
+        border-white/5">
+        
+        <h3 class="
+        text-[#E3FF6A] 
+        text-center 
+        text-[25px]
+        font-bold 
+        uppercase 
+        mb-8">
+        HABILIDADES ADICIONALES
+        </h3>
+
+        <div class="
+        flex 
+        flex-wrap 
+        justify-center 
+        gap-20
+        opacity-50">
+
+          <img src="./IMG/image copy 8.png" class="h-20 w-20">
+          <img src="./IMG/image copy 9.png" class="h-20 w-20">
+          <img src="./IMG/image copy 10.png" class="h-20 w-20">
+          <img src="./IMG/image copy 11.png" class="h-20 w-20">
+        </div>
+    
+  </section>
+
+  
+
+  <!-- 4/5: EMPRESAS -->
+  <section id="empresas" class="
+    w-full 
+    min-h-screen 
+    bg-[#0B0F1A] 
+    text-white 
+    py-20 
+    px-6 
+    flex 
+    flex-col 
+    lg:flex-row 
+    items-center 
+    justify-center 
+    gap-12 
+    overflow-hidden">
+
+    <div class="
+      w-full 
+      lg:w-1/2 
+      flex 
+      flex-col 
+      items-center 
+      lg:items-start 
+      lg:pl-32 
+      lg:pr-10
+      text-center 
+      lg:text-left 
+      z-10">
+      
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-10">
+        EMPRESAS QUE <br> TRABAJAN CON <br> NOSOTROS
+      </h2>
+
+      <button class="
+      bg-[#E3FF6A] 
+      text-black 
+      px-20 py-4 
+      rounded-full 
+      text-[20px] 
+      font-black 
+      uppercase s
+      hadow-lg 
+      hover:scale-105 t
+      ransition-transform">
+      MIS PROYECTOS
+    </button>
+
     </div>
 
+   <div class="
+  w-full 
+  pr-0
+  lg:pr-32
+  lg:w-1/2 
+  flex 
+  items-center 
+  justify-center 
+  gap-4 
+  h-[500px]">
+
+  <!-- TARJETA 1 -->
+  <div class="
+    relative 
+    /* Móvil: Ancho pequeño */
+    w-64 
+    /* Desktop: Ancho grande */
+    lg:w-80
+    h-full 
+    rounded-[2.5rem] 
+    overflow-hidden 
+    shadow-2xl 
+    border 
+    border-white/10">
+    <img src="./IMG/image copy 15.png" alt="PLOMERO" class="w-full h-full object-cover">
   </div>
-</main>
+
+  <!-- TARJETA 2 -->
+  <div class="
+    w-24 
+    md:w-44 
+    h-full 
+    rounded-full
+    overflow-hidden 
+    shadow-2xl 
+    border 
+    border-white/10">
+    <img src="./IMG/image copy 16.png" alt="Marketing" class="w-full h-full object-cover">
+  </div>
+
+  <!-- TARJETA 3 -->
+  <div class="
+    w-24 
+    md:w-44 
+    h-full 
+    rounded-full
+    overflow-hidden 
+    shadow-2xl 
+    border 
+    border-white/10">
+    <img src="./IMG/image copy 17.png" alt="empire state" class="w-full h-full object-cover">
+  </div>
+
+</div>
+
+  </section>
+
+
+
+  <!-- 5/5: CONTACTAME -->
+  <section id="contacto" class="
+    w-full 
+    min-h-screen 
+    bg-[#0B0F1A] 
+    flex 
+    items-center 
+    justify-center 
+    px-6 
+    py-12">
+
+    <div class="w-full 
+    max-w-2xl 
+    bg-white 
+    rounded-[2.5rem] 
+    p-10 
+    md:p-16 
+    shadow-2xl">
+
+      <h2 class="
+      text-[#0B0F1A] 
+      text-3xl 
+      md:text-5xl 
+      font-black 
+      text-center 
+      uppercase 
+      mb-12"
+      >CONTACTAME
+    </h2>
+
+
+    
+      <form class="
+      flex 
+      flex-col 
+      gap-6"
+      >
+
+        <input type="text" 
+        placeholder="TU NOMBRE" 
+        
+        class="
+        w-full 
+        bg-[#E5E7EB] 
+        text-[#1F2937] 
+        text-[10px] 
+        font-bold 
+        px-8 py-5 
+        rounded-2xl 
+        outline-none
+        ">
+
+
+        <input type="email" 
+        placeholder="CORREO ELECTRONICO" 
+
+        class="
+        w-full 
+        bg-[#E5E7EB] 
+        text-[#1F2937] 
+        text-[10px] 
+        font-bold 
+        px-8 py-5 
+        rounded-2xl 
+        outline-none
+        ">
+
+        <textarea 
+        placeholder="TU MENSAJE" 
+        rows="4" 
+        
+        class="
+        w-full 
+        bg-[#E5E7EB] 
+        text-[#1F2937] 
+        text-[10px] 
+        font-bold 
+        px-8 py-5 
+        rounded-2xl 
+        outline-none 
+        resize-none
+        "></textarea>
+
+
+        <button type="submit" 
+        class="
+        w-full 
+        bg-[#E3FF6A] 
+        text-[#0B0F1A] 
+        text-[11px] 
+        font-black 
+        uppercase 
+        py-5 
+        rounded-full 
+        mt-4 
+        shadow-lg">
+        ENVIAR
+        </button>
+
+      </form>
+    </div>
+  </section>
 
 </body>
-
 </html>

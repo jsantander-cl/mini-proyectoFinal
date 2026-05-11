@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOBRE MI</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-[#0B0F1A] font-sans">
+  
+<section class="
+  w-full 
+  min-h-screen 
+  bg-[#0B0F1A] 
+  flex 
+  items-center 
+  justify-center 
+  px-6 
+  py-20 
+  overflow-hidden">
+
+  <!-- CONTENEDOR GRID: Controla el espacio de fotos y texto -->
+  <div class="
+    max-w-7xl 
+    mx-auto 
+    grid 
+    grid-cols-1 
+    lg:grid-cols-[1fr_2fr_1fr] 
+    gap-10 
+    items-center 
+    w-full">
+
+    <!-- COLUMNA IZQUIERDA (Fotos) -->
+    <aside class="
+      hidden 
+      lg:flex 
+      flex-col 
+      gap-20 
+      items-center">
+      
+      <!-- Foto Superior Izquierda -->
+      <div class="
+        w-32 
+        h-44 
+        bg-gray-800 
+        rounded-2xl 
+        -rotate-12 
+        overflow-hidden 
+        shadow-2xl">
+        <img src="./IMG/20150222_222553_LLS.JPG" alt="JPRDAM S"
+        class="w-full h-full object-cover">
+      </div>
+
+      <!-- Foto Inferior Izquierda -->
+      <div class="
+        w-36 
+        h-48 
+        bg-gray-800 
+        rounded-2xl 
+        rotate-6 
+        overflow-hidden 
+        shadow-2xl">
+        <img src="./IMG/DSCN8677.JPG" 
+        class="w-full h-full object-cover">
+      </div>
+    </aside>
+
+    <!-- COLUMNA CENTRAL (Texto - Siempre Protegido) -->
+    <article class="
+      flex 
+      flex-col 
+      items-center 
+      text-center 
+      z-10">
+      
+      <h2 class="
+        text-[#E3FF6A] 
+        text-4xl 
+        md:text-6xl 
+        font-black 
+        uppercase 
+        tracking-tighter 
+        mb-8">
+        SOBRE MI
+      </h2>
+
+      <div class="
+        space-y-6 
+        text-gray-400 
+        text-sm 
+        md:text-base 
+        leading-relaxed">
+        <p>
+          Soy desarrollador Front-End especializado en ReactJS. 
+          Además, tengo conocimientos de desarrollo front-end en WordPress 
+          con Elementor y WooCommerce.
+        </p>
+        <p>
+          La programación es mi pasión, por eso trabajo mientras estudio.
+        </p>
+        <p>
+          En mi tiempo libre, me gusta jugar videojuegos y leer Mangas, la Fotografia. 
+          ¡lo cual me resulta muy entretenido y relajante!
+        </p>
+      </div>
+
+      <button class="
+        mt-10 
+        bg-[#E3FF6A] 
+        text-black 
+        px-10 
+        py-3 
+        rounded-full 
+        text-[11px] 
+        font-black 
+        uppercase 
+        tracking-widest 
+        hover:scale-105 
+        transition-transform">
+        MIS PROYECTOS
+      </button>
+    </article>
+
+    <!-- COLUMNA DERECHA (Foto Rebelde) -->
+    <aside class="
+      hidden 
+      lg:flex 
+      flex-col 
+      items-center">
+      <div class="
+        w-44 
+        h-56 
+        bg-gray-800 
+        rounded-2xl 
+        -rotate-6 
+        overflow-hidden 
+        shadow-2xl">
+        <img src="https://scontent.fscl9-2.fna.fbcdn.net/v/t1.6435-9/102938332_10222137809096999_4950925019002731897_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ca4fef&_nc_eui2=AeFS5YIT28ass_ZcKok9wuSi7W-PilEYip_tb4-KURiKnzEx9Vi0jSxkkPcktObdvbs&_nc_ohc=jMXkwVWu85YQ7kNvwFHztAT&_nc_oc=AdoqNQB-j-IdNqlyOjT1fbSNV0Snbm564zKjHNK2kY1kVyXi3f9pelQu3bXdmvYqPMkLoh5qcQrGbhgf48Jr2edt&_nc_zt=23&_nc_ht=scontent.fscl9-2.fna&_nc_gid=-oaO4_XL9h0Fo85r0tyClg&_nc_ss=7b2a8&oh=00_Af7ShT06vbxW3FpAWYYT_91ys15tZp6ojZMaVfP4hDULAg&oe=6A25E1C7" 
+        class="w-full h-full object-cover">
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- RESPLANDOR DE FONDO -->
+  <div class="
+    absolute 
+    inset-0 
+    m-auto 
+    w-80 
+    h-80 
+    bg-blue-500/5 
+    rounded-full 
+    blur-[120px] 
+    -z-10">
+  </div>
+
+</section>
+
+</body>
+</html>

@@ -1,5 +1,1 @@
 @import "tailwindcss";
-
-@theme {
-  --background-image-gradient-main: linear-gradient(135deg, #1E293B 0%, #0D1117 100%);
-}
