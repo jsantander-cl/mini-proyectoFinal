@@ -1,13 +1,18 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
+import { resolve } from "path";
 
 export default defineConfig({
-  // Aquí va tu configuración
+  plugins: [
+    tailwindcss()
+  ],
   build: {
     rollupOptions: {
       input: {
-        main: './index.html',
-        // Si borraste HOJA4, HOJA5 y HOJA6, asegúrate de que NO estén aquí
-      }
-    }
-  }
-})
+        main: resolve(__dirname, 'index.html'),
+       
+      },
+    },
+  },
+});
+
